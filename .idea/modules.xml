@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/data-search/data-search.iml" filepath="$PROJECT_DIR$/data-search/data-search.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/database.iml" filepath="$PROJECT_DIR$/.idea/database.iml" />
       <module fileurl="file://$PROJECT_DIR$/database-search/database-search.iml" filepath="$PROJECT_DIR$/database-search/database-search.iml" />
     </modules>

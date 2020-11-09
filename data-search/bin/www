@@ -7,7 +7,6 @@
 var app = require('../app');
 var debug = require('debug')('data-search:server');
 var http = require('http');
-var mysql = require("mysql");
 
 /**
  * Get port from environment and store in Express.
@@ -89,11 +88,3 @@ function onListening() {
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
 }
-
-
-var connection = mysql.createConnection({
-    host: "localhost",
-  user: "root",
-  password:"123",
-  database: "jcdatabase",
-})
