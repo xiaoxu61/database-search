@@ -65,3 +65,20 @@ conn.query(delSql,function (err, result) {
 
 // 断开/关闭链接   执行完sql语句就可以关闭连接
 conn.end();
+
+var method = "2";
+var Sql = "";
+switch (method) {
+    case "1":
+        //查询语句
+        Sql = 'select * from electronics where name = ?';
+        break;
+    case "2":
+        //插入语句
+        Sql = 'INSERT INTO electronics(name,frequency,result1,result2,result3) VALUES(?,?,?,?,?)';
+        break;
+    case "3":
+        //删除语句
+        Sql = 'delete from electronics where name = ?';
+        break;
+}
